@@ -1,4 +1,4 @@
-package com.java.tutorials;
+package com.java.tutorials.oops;
 
 public class ReverseString {
 	
