@@ -1,5 +1,8 @@
 package com.java.tutorials.algo;
-
+/*
+ * Author : Pankaj Kumar
+ * 
+ */
 public class RecursiveSearch {
 	static int unsortedList[] = {2,5,9,3,6,3,4,10,39,20};
 	

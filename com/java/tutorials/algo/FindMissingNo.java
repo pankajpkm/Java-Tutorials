@@ -1,5 +1,8 @@
 package com.java.tutorials.algo;
-
+/*
+ * Author : Pankaj Kumar
+ * 
+ */
 public class FindMissingNo {
 
 // Java program to find missing Number

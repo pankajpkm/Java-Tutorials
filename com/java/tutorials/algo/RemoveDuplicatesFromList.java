@@ -1,5 +1,8 @@
 package com.java.tutorials.algo;
-
+/*
+ * Author : Pankaj Kumar
+ * 
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

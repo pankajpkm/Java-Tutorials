@@ -1,5 +1,8 @@
 package com.java.tutorials.algo;
-
+/*
+ * Author : Pankaj Kumar
+ * 
+ */
 public class Sift0LeftAnd1RightArray {
 	
 	public int[] sift0and1(int[] arr){
