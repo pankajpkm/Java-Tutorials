@@ -6,23 +6,23 @@ package com.java.tutorials.algo;
 public class RecursiveSearch {
 	static int unsortedList[] = {2,5,9,3,6,3,4,10,39,20};
 	
-	public static int recSearch(int arr[], int i, int l , int x){
-		if(l<i)
+	public static int recSearch(int arr[], int index, int arrLenth , int elementToFind){
+		if(arrLenth<index)
 			return -1;
-		if(arr[i]==x)
-			return i;
-		return recSearch(arr,i+1,l,x);
+		if(arr[index]==elementToFind)
+			return index;
+		return recSearch(arr,index+1,arrLenth,elementToFind);
 	}
 
 	public static void main(String[] args) {
-		int x=20;
-		int index = recSearch(unsortedList, 0, unsortedList.length-1, x);
+		int elementToFind=3;
+		int index = recSearch(unsortedList, 0, unsortedList.length-1, elementToFind);
 		
 		 if (index != -1)
-	           System.out.println("Element " + x + " is present at index " + 
+	           System.out.println("Element " + elementToFind + " is present at index " + 
 	                                                    index);
 	        else
-	            System.out.println("Element " + x + " is not present");
+	            System.out.println("Element " + elementToFind + " is not present");
 		
 	}
 }
