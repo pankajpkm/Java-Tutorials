@@ -6,6 +6,15 @@ public class StaticVsNonStatic {
 
 	private static String x= "Static instance Variable";
 	private String y= "Non Static instance Variable";
+	int a;
+	
+	static{
+		System.out.println("Inside Static Block");
+	}
+	
+	public StaticVsNonStatic() {
+		this.a=10;
+	}
 	
 	private void instanceMethod(){
 		System.out.println("Inside Instance method in Same Class");
@@ -32,6 +41,7 @@ public class StaticVsNonStatic {
 	}
 
 	public static void main(String[] args) {
+		System.out.println(x);
 		StaticVsNonStatic s=new StaticVsNonStatic();
 		s.instanceMethod();
 		staticMethod();

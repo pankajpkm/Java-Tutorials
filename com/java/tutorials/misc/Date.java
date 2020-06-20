@@ -4,6 +4,8 @@ package com.java.tutorials.misc;
  * Used Java 8 for all the Tutorials
  */
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Date {
 
@@ -18,9 +20,20 @@ public class Date {
 		return date.getDayOfWeek().name();
 	}
 	
+	/*** 
+	 * @param format
+	 * @return currentDate
+	 */
+	public static String getCurrentDate(String format) {
+		DateTimeFormatter dtf= DateTimeFormatter.ofPattern(format);
+		LocalDateTime date = LocalDateTime.now();
+		return dtf.format(date);
+	}
+	
 	public static void main(String[] args) {
 		Date d = new Date();
 		String dow=d.getDay(2020, 04, 12);
 		System.out.println(dow);
+		System.out.println(getCurrentDate("dd-MMM-yyyy"));
 	}
 }

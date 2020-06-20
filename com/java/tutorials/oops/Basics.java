@@ -51,7 +51,17 @@ public class Basics {
 		((B1)b).m1();
 		((A1)a).m1();
 		//((B1)a).m1();  ClassCastException A1 cannot be cast to B1 // At run time
-				
+			
+		//Testing String Split method
+
+		String s="a,b";
+		System.out.println("length : "+s.split("!!").length);
+		if(s.split("!!").length>1)
+			System.out.println(s.split("!!")[1]);
+		else {
+			System.out.println("Nothing");
+		}
+		
 	}
 
 }

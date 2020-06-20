@@ -14,7 +14,7 @@ public class TestEquality {
 		TestEquality t = new TestEquality();
 		t.x=5;
 		t.y=5;
-		System.out.println(t.testEquality());
+		System.out.println(t.testEquality());		
 	}
 
 }

@@ -31,6 +31,19 @@ public class FibonacciSeries {
 		}
 	}
 	
+	public String fibonacciChecker(int n){
+		final int lmt=49;
+		int firstElement=0, secondElement=1;
+		if(n==0 || n==1){return "Yes";}
+		for(int i=2; i<lmt ; i++){
+			int fn = firstElement+secondElement;
+			if(fn==n){return "Yes";}
+			firstElement=secondElement;
+			secondElement=fn;
+		}
+		return "No";
+	}
+	
 	public static void main(String[] args) {
 		int n=6;
 		FibonacciSeries fs= new FibonacciSeries();
@@ -46,6 +59,9 @@ public class FibonacciSeries {
 		
 		System.out.println("\n-------without recursion ------");
 		fs.formFibSeries(n);
+		
+		System.out.println("\n------Checking number is fibonacci or not-----------");
+		System.out.println(fs.fibonacciChecker(56));
 	}
 
 }
